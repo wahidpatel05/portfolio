@@ -10,10 +10,10 @@ function Project() {
     projectLink: 'https://github.com/kshxaib/Roomora-hotel-management-app.git'
   },
   {
-    imgSrc: '/images/strong-password-generator.png',
-    title: 'Password Generator',
-    tags: ['API', 'SPA'],
-    projectLink: 'https://github.com/wahidpatel05/learning-react/tree/main/05passgeneratore'
+    imgSrc: '/images/ems.png',
+    title: 'Employee Management System',
+    tags: ['Frontend', 'SPA','Context API', 'Auth'],
+    projectLink: 'https://employee-management-system-six-chi.vercel.app/'
   },
   {
     imgSrc: '/images/stock-tracker.jpg',
