@@ -7,7 +7,7 @@ function Project() {
     imgSrc: '/images/roomora.png',
     title: 'Roomora - Hotel management app',
     tags: ['Full-Stack', 'Management', 'Booking'],
-    projectLink: 'https://github.com/kshxaib/Roomora-hotel-management-app.git'
+    projectLink: 'https://roomora-nine.vercel.app/'
   },
   {
     imgSrc: '/images/ems.png',
@@ -17,9 +17,9 @@ function Project() {
   },
   {
     imgSrc: '/images/stock-tracker.jpg',
-    title: 'Real Time Stock Price Checker',
-    tags: ['Python','Development', 'API'],
-    projectLink: 'https://github.com/wahidpatel05/real-time-stock-tracker.git'
+    title: 'A premium e-commerce website for perfumes and essentials',
+    tags: ['Full Stack','Freelancing', 'production'],
+    projectLink: 'https://www.mzaromas.com/'
   }
 ];
   return (
