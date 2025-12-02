@@ -16,7 +16,7 @@ function Project() {
     projectLink: 'https://employee-management-system-six-chi.vercel.app/'
   },
   {
-    imgSrc: '/images/stock-tracker.jpg',
+    imgSrc: '/images/mz.png',
     title: 'A premium e-commerce website for perfumes and essentials',
     tags: ['Full Stack','Freelancing', 'production'],
     projectLink: 'https://www.mzaromas.com/'
