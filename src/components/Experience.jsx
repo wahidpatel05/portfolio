@@ -21,6 +21,30 @@ function Experience() {
       ],
     },
     {
+  company: 'Smart India Hackathon 2025',
+  roles: [
+    {
+      role: 'Finalist · Frontend & AI Integration',
+      duration: 'December 2025',
+      desc: [
+        'Scraped and structured learning content from the NSQF portal using Python for downstream processing.',
+        'Developed key frontend interfaces including learning flow and profile display pages.',
+        'Integrated multilingual support by consuming and hosting a language model via Hugging Face.',
+        'Deployed and managed a Hugging Face model to enable scalable multilingual content delivery.',
+        'Collaborated in a fast-paced hackathon environment to deliver an end-to-end functional prototype.',
+      ],
+      tags: [
+        'AI Integration',
+        'React',
+        'Python',
+        'Web Scraping',
+        'Multilingual NLP',
+        'Hugging Face',
+      ],
+    },
+  ],
+},
+    {
       company: 'ACM Student Chapter',
       roles: [
         {
