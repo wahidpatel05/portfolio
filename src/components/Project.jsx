@@ -18,7 +18,7 @@ function Project() {
   {
     imgSrc: '/images/mz.png',
     title: 'A premium e-commerce website for perfumes and essentials',
-    tags: ['Full Stack','Freelancing', 'production'],
+    tags: ['Full Stack','Freelancing', 'Production'],
     projectLink: 'https://www.mzaromas.com/'
   }
 ];
