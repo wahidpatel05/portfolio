@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import { Analytics } from '@vercel/analytics/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <ReactLenis root>
+      <Analytics />
       <Header />
       <main>
         <Hero />
