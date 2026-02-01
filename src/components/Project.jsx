@@ -4,19 +4,19 @@ import ProjectCard from './ProjectCard';
 function Project() {
     const works = [
   {
-    imgSrc: '/images/roomora.png',
+    imgSrc: '/images/project-1.jpg',
     title: 'Roomora - Hotel management app',
     tags: ['Full-Stack', 'Management', 'Booking'],
     projectLink: 'https://roomora-nine.vercel.app/'
   },
   {
-    imgSrc: '/images/ems.png',
+    imgSrc: '/images/project-2.jpg',
     title: 'Employee Management System',
     tags: ['Frontend', 'SPA','Context API', 'Auth'],
     projectLink: 'https://employee-management-system-six-chi.vercel.app/'
   },
   {
-    imgSrc: '/images/mz.png',
+    imgSrc: '/images/project-3.jpg',
     title: 'A premium e-commerce website for perfumes and essentials',
     tags: ['Full Stack','Freelancing', 'Production'],
     projectLink: 'https://www.mzaromas.com/'

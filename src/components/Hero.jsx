@@ -43,7 +43,7 @@ function Hero() {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-b from-zinc-900 from-25% via-indigo-500/50 via-60% to-indigo-500 to-100% rounded-[60px] overflow-hidden">
             <img
-              src="/images/wahid coat.png"
+              src="/images/wahid_coat.png"
               alt="Wahid Patel Portrait"
               className="w-full h-auto"
             />
