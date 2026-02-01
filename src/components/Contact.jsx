@@ -1,6 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatusMessage('');
+
+    try {
+      const response = await fetch('https://portfolio-backend-two-red-48.vercel.app/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatusMessage('✓ Message sent successfully! I\'ll get back to you soon.');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatusMessage('✗ ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatusMessage('✗ Failed to send message. Please try again or contact me directly.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const socialLinks = [
     {
       href: 'https://github.com/wahidpatel05',
@@ -85,31 +131,46 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <form className="grid gap-4 max-w-lg mx-auto">
+        <form className="grid gap-4 max-w-lg mx-auto" onSubmit={handleSubmit}>
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            value={formData.name}
+            onChange={handleInputChange}
             className="px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             required
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            value={formData.email}
+            onChange={handleInputChange}
             className="px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             required
           />
           <textarea
+            name="message"
             placeholder="Your Message"
             rows="4"
+            value={formData.message}
+            onChange={handleInputChange}
             className="px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             required
           ></textarea>
           <button
             type="submit"
-            className="btn btn-primary w-full"
+            disabled={loading}
+            className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Send Message
+            {loading ? 'Sending...' : 'Send Message'}
           </button>
+          {statusMessage && (
+            <p className={`text-sm ${statusMessage.includes('✓') ? 'text-green-400' : 'text-red-400'}`}>
+              {statusMessage}
+            </p>
+          )}
         </form>
       </div>
     </section>
