@@ -22,7 +22,7 @@ function About() {
     >
         <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 max-w-6xl mx-auto reveal-up'>
             <p className='text-zinc-300 mb-4 md:8 md:text-xl md:max-w-[90ch]'>
-                Hi, I’m Wahid Patel  a Software Engineer and Frontend Developer in the making.
+                Hi, I’m Wahid Patel  a Software Engineer and Full Stack Developer in the making.
 I’m currently pursuing a B.E. in Information Technology at M.H. Saboo Siddik College of Engineering (Class of 2027). I specialize in building scalable, user-centric web applications using React.js, JavaScript, Nodejs, Python, C++, and SQL, with a strong interest in clean architecture and performance-driven design.
                 <br /> <br />
                 Beyond academics, I serve as the Vice Chairperson of the ACM Student Chapter, where I lead and collaborate on technical events, hackathons, and student initiatives.
